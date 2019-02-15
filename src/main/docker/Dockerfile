@@ -5,7 +5,7 @@ RUN apk update && \
     apk fix && \
     apk add su-exec
 
-COPY src/entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY maven/scripts/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
