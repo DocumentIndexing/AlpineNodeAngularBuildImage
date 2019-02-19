@@ -1,5 +1,7 @@
 FROM alpine/node
-RUN npm install -g @angular/cli && \
+RUN npm install -g npm@latest && \
+    npm install --save-dev @angular-devkit/build-angular && \
+    npm install -g @angular/cli && \
     npm install -g typescript
 RUN apk update && \
     apk fix && \
