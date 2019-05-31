@@ -1,4 +1,4 @@
-FROM alpine/node
+FROM node:alpine
 RUN npm install -g npm@latest && \
     npm install --save-dev @angular-devkit/build-angular && \
     npm install -g @angular/cli && \
