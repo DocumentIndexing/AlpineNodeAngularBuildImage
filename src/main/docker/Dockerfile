@@ -2,6 +2,7 @@ FROM node:alpine
 RUN npm install -g npm@latest && \
     npm install --save-dev @angular-devkit/build-angular && \
     npm install -g @angular/cli && \
+    npm install firebase firebaseui @angular/fire firebaseui-angular --save && \
     npm install -g typescript
 RUN apk update && \
     apk fix && \
